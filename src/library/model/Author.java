@@ -8,6 +8,13 @@ public class Author {
         this.name = name;
     }
 
+    public static void showAuthorInfo() {
+
+        System.out.println(
+                "Author.showAuthorInfo()"
+        );
+    }
+
     @Override
     public String toString() {
         return name;
