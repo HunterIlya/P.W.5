@@ -1,14 +1,16 @@
 package library.model;
 
-public abstract class LibraryItem {
+public abstract class Person {
 
-    protected String title;
+    protected String name;
 
-    public LibraryItem(String title) {
-        this.title = title;
+    public Person(String name) {
+        this.name = name;
     }
 
-    public void getItemInfo() {
-        System.out.println("LibraryItem.getItemInfo()");
+    public static void showPersonType() {
+        System.out.println("Person.showPersonType()");
     }
+
+    public abstract void showInfo();
 }
