@@ -4,7 +4,9 @@ import library.model.*;
 
 public class ObjectFactory {
 
-    public static User createUser(String name) {
+    public static User createUser(
+            String name
+    ) {
 
         System.out.println(
                 "ObjectFactory.createUser()"
@@ -22,10 +24,14 @@ public class ObjectFactory {
                 "ObjectFactory.createBook()"
         );
 
-        return new Book(title, author);
+        return new Book(
+                title,
+                author
+        );
     }
 
-    public static ElectronicResource createElectronicResource(
+    public static ElectronicResource
+    createElectronicResource(
             String title,
             String url
     ) {
@@ -34,6 +40,9 @@ public class ObjectFactory {
                 "ObjectFactory.createElectronicResource()"
         );
 
-        return new ElectronicResource(title, url);
+        return new ElectronicResource(
+                title,
+                url
+        );
     }
 }
