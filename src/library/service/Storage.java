@@ -1,6 +1,7 @@
 package library.service;
 
 import library.model.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +20,13 @@ public class Storage {
         );
 
         System.out.println(
-                "Users count: " + users.size()
+                "Users count: "
+                        + users.size()
         );
 
         System.out.println(
-                "Items count: " + items.size()
+                "Items count: "
+                        + items.size()
         );
     }
 }
